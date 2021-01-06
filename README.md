@@ -3,7 +3,7 @@
 1.5  qqreads.js修复获取cookies问题，qqreadnode修复QQREAD_CASH环境变量问题
 
 1.4增加本仓库自动同步功能 只需设置secrets名：  PAT   
-此处PAT需要申请，教程详见：https://www.jianshu.com/p/bb82b3ad1d11
+此处PAT需要申请，详见：https://www.jianshu.com/p/bb82b3ad1d11
 
 1.3同步更新ziye12脚本，修复cookie失效继续阅读任务，实测也可以Actions运行，不过还是建议云函数运行。
 
