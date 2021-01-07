@@ -21,8 +21,6 @@ jobs:
         QQREAD_CASH: ${{ secrets.QQREAD_CASH }}        
     steps:
       - name: Checkout
-        run: |
-          git clone https://github.com/whoisbot/JavaScript.git ~/JavaScript
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
@@ -30,12 +28,10 @@ jobs:
       - name: npm install
         if: env.QQREAD_TIMEHD
         run: |
-          cd ~/JavaScript
           npm install
       - name: '运行 【企鹅读书2】'
         if: env.QQREAD_TIMEHD
         run: |
-          cd ~/JavaScript
           node Task/qqreads.js
         env:
           
